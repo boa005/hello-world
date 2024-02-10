@@ -1,36 +1,54 @@
-/* Style the form element with a border around it */
-form {
-  border: 4px solid #f1f1f1;
-}
+* {box-sizing: border-box}
 
-/* Add some padding and a grey background color to containers */
+/* Add padding to containers */
 .container {
-  padding: 20px;
-  background-color: #f1f1f1;
+  padding: 16px;
 }
 
-/* Style the input elements and the submit button */
-input[type=text], input[type=submit] {
+/* Full-width input fields */
+input[type=text], input[type=password] {
   width: 100%;
-  padding: 12px;
-  margin: 8px 0;
+  padding: 15px;
+  margin: 5px 0 22px 0;
   display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  border: none;
+  background: #f1f1f1;
 }
 
-/* Add margins to the checkbox */
-input[type=checkbox] {
-  margin-top: 16px;
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
-/* Style the submit button */
-input[type=submit] {
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
   background-color: #04AA6D;
   color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
   border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
 }
 
-input[type=submit]:hover {
-  opacity: 0.8;
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
 }
